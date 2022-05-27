@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping | ProjectFinal</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link JS -->
+    <!-- <script type="text/javascript" src="showProduct1.js"></script> -->
+    <!-- Box Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class= "nav container">
+            <a href="#" class="logo"><img src="./pic/Logo.png" alt=""></a>
+            <!-- <a href="#" class="logo">Ecommerce</a> -->
+            <!-- NavBar to section -->
+            <ul class="nav__links">
+                <li><a href="#" data-after="Home">AIR FORCE</a></li>
+                <li><a href="#" data-after="Profile">JORDAN</a></li>
+                <li><a href="#" data-after="Skill">BLAZER</a></li>
+                <li><a href="#" data-after="About">AIR MAX</a></li>
+                <li><a href="#" data-after="About">AIR ZOOM</a></li>
+            </ul>
+            <!-- Cart Icon -->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <!-- Cart -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- Content -->
+                <div class="cart-content"></div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">Buy Now</button>
+                <!-- Cart Close -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+        <!-- Nav Out HeadNav -->
+        <div class="navBottom">
+            <h3 class="menuItem">Jordan 6 Retro</h3>
+            <h3 class="menuItem">Jordan XXXVI PF</h3>
+            <h3 class="menuItem">Jordan 1 Retro High OG</h3>
+            <h3 class="menuItem">Jordan 1 Mid SE</h3>
+            <h3 class="menuItem">Jordan XXXVI</h3>
+        </div>
+        
+    </header>
+
+    <!-- Show New item -->
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="./collection/Air-Jordan-6-Retro.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">Air Jordan 6</br> Retro</br> NEW!!</h1>
+                <h2 class="sliderPrice">$213.20</h2>
+                <!-- <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a> -->
+            </div>
+            <div class="sliderItem">
+                <img src="./collection/Air-Jordan-XXXVI-PF.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">Air Jordan</br> XXXVI PF</br> NEW!!</h1>
+                <h2 class="sliderPrice">$184.38</h2>
+                <!-- <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a> -->
+            </div>
+            <div class="sliderItem">
+                <img src="./collection/Air-Jordan-1-Retro-High-OG.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">Air Jordan 1</br> Retro High OG</br> NEW!!</h1>
+                <h2 class="sliderPrice">$175.74</h2>
+                <!-- <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a> -->
+            </div>
+            <div class="sliderItem">
+                <img src="./collection/Air-Jordan-1-Mid-SE.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">Air Jordan 1</br> Mid SE</br> NEW!!</h1>
+                <h2 class="sliderPrice">$132.53</h2>
+                <!-- <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a> -->
+            </div>
+            <div class="sliderItem">
+                <img src="./collection/Air-Jordan-XXXVI.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">Air Jordan</br> XXXVI</br> NEW!!</h1>
+                <h2 class="sliderPrice">$135.41</h2>
+                <!-- <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Shop 1 Recommend Products -->
+    <section class="shop container">
+        <h2 class="section-title">Recommend Products</h2>
+        <!-- Content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <img src="./collection/Air-Jordan-6-Retro.png" alt="" class="product-img">
+                <h2 class="product-title">Air Jordan 6 Retro</h2>
+                <span class="price">$213.20</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="product-box">
+                <img src="./collection/Air-Jordan-XXXVI-PF.png" alt="" class="product-img">
+                <h2 class="product-title">Air Jordan XXXVI PF</h2>
+                <span class="price">$184.38</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="product-box">
+                <img src="./collection/Air-Jordan-1-Retro-High-OG.png" alt="" class="product-img">
+                <h2 class="product-title">Air Jordan 1 Retro High OG</h2>
+                <span class="price">$175.74</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box">
+                <img src="./collection/Air-Jordan-1-Mid-SE.png" alt="" class="product-img">
+                <h2 class="product-title">Air Jordan 1 Mid SE</h2>
+                <span class="price">$132.53</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="product-box">
+                <img src="./collection/Air-Jordan-XXXVI.png" alt="" class="product-img">
+                <h2 class="product-title">Air Jordan XXXVI</h2>
+                <span class="price">$135.41</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="product-box">
+                <img src="./collection/Jordan-1-KO.png" alt="" class="product-img">
+                <h2 class="product-title">Jordan 1 KO</h2>
+                <span class="price">$149.81</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 7 -->
+            <div class="product-box">
+                <img src="./collection/NikeAirForce1LX.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Force 1 LX</h2>
+                <span class="price">$138.29</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 8 -->
+            <div class="product-box">
+                <img src="./collection/NikeAirForce1Shadow.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Force 1 Shadow</h2>
+                <span class="price">$132.53</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop 2 AIR FORCE -->
+    <section class="shop container">
+        <h2 class="section-title">AIR FORCE</h2>
+        <!-- Content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <img src="./collection/NikeAirForce107LV8.png" alt="" class="product-img">
+                <h2 class="product-title">Air Jordan 6 Retro</h2>
+                <span class="price">$213.20</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="product-box">
+                <img src="./collection/NikeAirForce107Premium.png" alt="" class="product-img">
+                <h2 class="product-title">Air Jordan XXXVI PF</h2>
+                <span class="price">$184.38</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="product-box">
+                <img src="./collection/NikeAirForce107Skeleton.png" alt="" class="product-img">
+                <h2 class="product-title">Air Jordan 1 Retro High OG</h2>
+                <span class="price">$175.74</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box">
+                <img src="./collection/NikeAirForce1LowSP.png" alt="" class="product-img">
+                <h2 class="product-title">Air Jordan 1 Mid SE</h2>
+                <span class="price">$132.53</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="product-box">
+                <img src="./collection/NikeAirForce1LV8EMB.png" alt="" class="product-img">
+                <h2 class="product-title">Air Jordan XXXVI</h2>
+                <span class="price">$135.41</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="product-box">
+                <img src="./collection/NikeAirForce1LX.png" alt="" class="product-img">
+                <h2 class="product-title">Jordan 1 KO</h2>
+                <span class="price">$149.81</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 7 -->
+            <div class="product-box">
+                <img src="./collection/NikeAirForce1Shadow.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Force 1 LX</h2>
+                <span class="price">$138.29</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>          
+        </div>
+    </section>
+
+    <!-- Shop 3 JORDAN -->
+    <section class="shop container">
+        <h2 class="section-title">JORDAN</h2>
+        <!-- Content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <img src="./jordan/Air-Jordan-6-Retro.png" alt="" class="product-img">
+                <h2 class="product-title">Air Jordan 6 Retro</h2>
+                <span class="price">$213.20</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="product-box">
+                <img src="./jordan/Air-Jordan-XXXVI-PF.png" alt="" class="product-img">
+                <h2 class="product-title">Air Jordan XXXVI PF</h2>
+                <span class="price">$184.38</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="product-box">
+                <img src="./jordan/Air-Jordan-1-Retro-High-OG.png" alt="" class="product-img">
+                <h2 class="product-title">Air Jordan 1 Retro High OG</h2>
+                <span class="price">$175.74</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box">
+                <img src="./jordan/Air-Jordan-1-Mid-SE.png" alt="" class="product-img">
+                <h2 class="product-title">Air Jordan 1 Mid SE</h2>
+                <span class="price">$132.53</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="product-box">
+                <img src="./jordan/Air-Jordan-XXXVI.png" alt="" class="product-img">
+                <h2 class="product-title">Air Jordan XXXVI</h2>
+                <span class="price">$135.41</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="product-box">
+                <img src="./jordan/Jordan-1-KO.png" alt="" class="product-img">
+                <h2 class="product-title">Jordan 1 KO</h2>
+                <span class="price">$149.81</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 7 -->
+            <div class="product-box">
+                <img src="./jordan/Jordan-.5-Why-Not.png" alt="" class="product-img">
+                <h2 class="product-title">Jordan 5 Why Not</h2>
+                <span class="price">$138.29</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 8 -->
+            <div class="product-box">
+                <img src="./jordan/Jordan-One-Take-3-PF-2.png" alt="" class="product-img">
+                <h2 class="product-title">Jordan One Take 3 PF 2</h2>
+                <span class="price">$132.53</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 9 -->
+            <div class="product-box">
+                <img src="./jordan/Jordan-Why-Not-.5-PF.png" alt="" class="product-img">
+                <h2 class="product-title">Jordan Why Not 5 PF</h2>
+                <span class="price">$132.53</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 10 -->
+            <div class="product-box">
+                <img src="./jordan/Jordan-Zoom-Separate-PF.png" alt="" class="product-img">
+                <h2 class="product-title">Jordan Zoom Separate PF</h2>
+                <span class="price">$132.53</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop 4 BLAZER -->
+    <section class="shop container">
+        <h2 class="section-title">BLAZER</h2>
+        <!-- Content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <img src="./blazer/Nike-Blazer-Low-_77-Jumbo.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Blazer Low 77 Jumbo</h2>
+                <span class="price">$104.09</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="product-box">
+                <img src="./blazer/Nike-Blazer-Low-Platform-Next-Nature.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Blazer Low Platform Next Nature</h2>
+                <span class="price">$121.43</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="product-box">
+                <img src="./blazer/Nike-Blazer-Mid-_77-EMB.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Blazer Mid 77 EMB</h2>
+                <span class="price">$127.22</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box">
+                <img src="./blazer/Nike-Blazer-Mid-_77-Jumbo.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Blazer Mid 77 Jumbo</h2>
+                <span class="price">$121.43</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="product-box">
+                <img src="./blazer/Nike-Blazer-Mid-_77.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Blazer Mid 77</h2>
+                <span class="price">$121.43</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="product-box">
+                <img src="./blazer/Nike-SB-Blazer-Court-Mid-Premium.png" alt="" class="product-img">
+                <h2 class="product-title">Nike SB Blazer Court Mid Premium</h2>
+                <span class="price">$92.52</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 7 -->
+            <div class="product-box">
+                <img src="./blazer/Nike-SB-Zoom-Blazer-Low-Pro-GT-Premium.png" alt="" class="product-img">
+                <h2 class="product-title">Nike SB Zoom Blazer Low Pro GT Premium</h2>
+                <span class="price">$92.52</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 8 -->
+            <div class="product-box">
+                <img src="./blazer/Nike-SB-Zoom-Blazer-Mid-Premium.png" alt="" class="product-img">
+                <h2 class="product-title">Nike SB Zoom Blazer Mid Premium</h2>
+                <span class="price">$127.22</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 9 -->
+            <div class="product-box">
+                <img src="./blazer/Nike-x-ACRONYM®-Blazer-Low.png" alt="" class="product-img">
+                <h2 class="product-title">Nike x ACRONYM® Blazer Low</h2>
+                <span class="price">$150.35</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop 5 AIR MAX -->
+    <section class="shop container">
+        <h2 class="section-title">AIR MAX</h2>
+        <!-- Content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-Max-1-Premium.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Max 1 Premium</h2>
+                <span class="price">$153.24</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-Max-2021-SE.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Max 2021 SE</h2>
+                <span class="price">$182.15</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-Max-2021.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Max 2021</h2>
+                <span class="price">$173.48</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-Max-270-SE.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Max 270 SE</h2>
+                <span class="price">$159.02</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-Max-90-Futura.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Max 90 Futura</h2>
+                <span class="price">$153.24</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-Max-95-SE.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Max 95 SE</h2>
+                <span class="price">$182.15</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 7 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-Max-97-OG.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Max 97 OG</h2>
+                <span class="price">$187.93</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 8 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-Max-97.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Max 97</h2>
+                <span class="price">$167.70</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 9 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-Max-AP.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Max AP</h2>
+                <span class="price">$104.09</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 10 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-Max-Bella-TR-5.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Max Bella TR 5</h2>
+                <span class="price">$95.41</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 11 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-Max-Dawn-SE.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Max Dawn SE</h2>
+                <span class="price">$150.35</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 12 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-Max-Dawn.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Max Dawn</h2>
+                <span class="price">$138.78</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 13 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-Max-Excee.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Max Excee</h2>
+                <span class="price">$95.41</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 14 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-Max-Furyosa.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Max Furyosa</h2>
+                <span class="price">$159.02</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 15 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-Max-Pre-Day-SE.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Max Pre Day SE</h2>
+                <span class="price">$161.91</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 16 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-Max-Pre-Day.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Max Pre Day</h2>
+                <span class="price">$156.13</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 17 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-Max-Terrascape-90.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Max Terrascape 90</h2>
+                <span class="price">$164.80</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 18 -->
+            <div class="product-box">
+                <img src="./airmax/Nike-Air-More-Uptempo-96.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air More Uptempo 96</h2>
+                <span class="price">$167.70</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop 6 AIR ZOOM -->
+    <section class="shop container">
+        <h2 class="section-title">AIR ZOOM</h2>
+        <!-- Content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <img src="./airzoom/Nike-Air-Zoom-Alphafly-NEXT_-Flyknit.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Zoom Alphafly NEXT Flyknit</h2>
+                <span class="price">$271.78</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="product-box">
+                <img src="./airzoom/Nike-Air-Zoom-Arcadia.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Zoom Arcadia</h2>
+                <span class="price">$135.89</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="product-box">
+                <img src="./airzoom/Nike-Air-Zoom-Crossover.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Zoom Crossover</h2>
+                <span class="price">$72.28</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box">
+                <img src="./airzoom/Nike-Air-Zoom-G.T.-Run.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Zoom G.T.Run</h2>
+                <span class="price">$185.04</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="product-box">
+                <img src="./airzoom/Nike-Air-Zoom-Infinity-Tour-NXT_.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Zoom Infinity Tour NXT5%</h2>
+                <span class="price">$187.93</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="product-box">
+                <img src="./airzoom/Nike-Air-Zoom-Pegasus-38-A.I.R.-Jordan-Moss.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Zoom Pegasus 38 A.I.R.Jordan Moss</h2>
+                <span class="price">$144.57</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 7 -->
+            <div class="product-box">
+                <img src="./airzoom/Nike-Air-Zoom-Pegasus-38-Ekiden.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Zoom Pegasus 38 Ekiden</h2>
+                <span class="price">$144.57</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 8 -->
+            <div class="product-box">
+                <img src="./airzoom/Nike-Air-Zoom-Pegasus-38.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Zoom Pegasus 38</h2>
+                <span class="price">$133.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 9 -->
+            <div class="product-box">144.57
+                <img src="./airzoom/Nike-Air-Zoom-Pegasus-39.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Zoom Pegasus 39</h2>
+                <span class="price">$135.89</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 10 -->
+            <div class="product-box">
+                <img src="./airzoom/Nike-Air-Zoom-Rival-Fly-3-Ekiden.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Zoom Rival Fly 3 Ekiden</h2>
+                <span class="price">$106.98</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 11 -->
+            <div class="product-box">
+                <img src="./airzoom/Nike-Air-Zoom-Rival-Fly-3.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Zoom Rival Fly 3</h2>
+                <span class="price">$95.41</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 12 -->
+            <div class="product-box">
+                <img src="./airzoom/Nike-Air-Zoom-SuperRep-3.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Zoom SuperRep 3</h2>
+                <span class="price">$133.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 13 -->
+            <div class="product-box">
+                <img src="./airzoom/Nike-Air-Zoom-Tempo-NEXT_-FlyEase.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Zoom Tempo NEXT% FlyEase</h2>
+                <span class="price">$202.39</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 14 -->
+            <div class="product-box">
+                <img src="./airzoom/Nike-Air-Zoom-Tempo-NEXT_.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Zoom Tempo NEXT%</h2>
+                <span class="price">$202.39</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 15 -->
+            <div class="product-box">
+                <img src="./airzoom/Nike-Air-Zoom-Terra-Kiger-7.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Zoom Terra Kiger 7</h2>
+                <span class="price">$150.35</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 16 -->
+            <div class="product-box">
+                <img src="./airzoom/Nike-Air-Zoom-Terra-Kiger-8.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Zoom Terra Kiger 8</h2>
+                <span class="price">$156.13</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 17 -->
+            <div class="product-box">
+                <img src="./airzoom/Nike-Air-Zoom-Winflo-7.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Zoom Winflo 7</h2>
+                <span class="price">$133.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- เก่า -->
+    <!-- <nav>
+        <ul>
+          <li class="logo"></div><a href="#"><img src="./pic/Logo.png" alt=""><span class="mini"></span></a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+
+    <!-- Nav -->
+
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="showProduct1.js"></script>
+</body>
+</html>
